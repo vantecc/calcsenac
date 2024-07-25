@@ -1,0 +1,67 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body id="light">
+
+    <button id="bMode" onclick="dark()">Bat mode</button>
+
+    <div id="imagem">
+    </div>
+    
+    <div class="container">
+        <div class="img">
+            <img id="logo" src="hello.png" alt="">
+        </div>
+        <div class="text">
+            <input type="text" id="imprimir" placeholder="Executar cálculo">
+        </div>
+
+        <div class="linezero">
+            <button id="mc">Mc</button>
+            <button id="mr">Mr</button>
+            <button id="Mmais">M+</button>
+            <button id="Mmenos">M-</button>
+        </div>
+
+        <div class="lineone">
+            <button class="num" onclick="visible('7')">7</button>
+            <button class="num" onclick="visible('8')">8</button>
+            <button class="num" onclick="visible('9')">9</button>
+            <button class="num" id="sinaldiv" onclick="visible('/')">/</button>
+        </div>
+
+        <div class="linetwo">
+            <button class="num" onclick="visible('4')">4</button>
+            <button class="num" onclick="visible('5')">5</button>
+            <button class="num" onclick="visible('6')">6</button>
+            <button class="num" id="sinalmultiplicador" onclick="visible('*')">*</button>
+        </div>
+
+        <div class="linethree">
+            <button class="num" onclick="visible('1')">1</button>
+            <button class="num" onclick="visible('2')">2</button>
+            <button class="num" onclick="visible('3')">3</button>
+            <button class="num" id="sinalmenos" onclick="visible('-')">-</button>
+        </div>
+        <div class="linefour">
+            <button id="calcular">=</button>
+            <button id="delet">C</button>
+            <button class="num" onclick="visible('0')">0</button>
+            <button class="num" onclick="visible('.')">.</button>
+            <button class="num" id="sinalmais" onclick="visible('+')">+</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
